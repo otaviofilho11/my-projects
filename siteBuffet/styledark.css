@@ -1,0 +1,224 @@
+:root {
+    --mainred: #ff4d4d;
+    --vermelhofundo: #1e1e1e;
+    --backWhite: #121212;
+    --amarelodestaque: #ffd700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--backWhite);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--vermelhofundo);
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+a {
+    color: var(--amarelodestaque);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 4vh 0 2vh 0;
+    font-size: 30px;
+    color: var(--mainred);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.conteudo {
+    background-color: var(--vermelhofundo);
+    color: #e0e0e0;
+    margin: 2vh auto;
+    max-width: 800px;
+    width: 90%;
+    padding: 4vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.6px;
+    text-align: justify;
+    text-indent: 40px;
+    color: #e0e0e0;
+}
+
+.cardapio-container {
+    max-width: 800px;
+    width: 90%;
+    margin: 4vh auto;
+}
+
+.cardapio-linha {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 4vh;
+    background-color: var(--vermelhofundo);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cardapio-linha.invertido {
+    flex-direction: row-reverse;
+}
+
+.cardapio-foto {
+    flex: 1;
+    min-width: 45%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.cardapio-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cardapio-linha:hover .cardapio-foto img {
+    transform: scale(1.04);
+}
+
+.cardapio-texto {
+    flex: 1;
+    padding: 25px;
+    text-align: left;
+}
+
+.categoria-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--amarelodestaque);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cardapio-texto h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+}
+
+.cardapio-texto p {
+    font-size: 15px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 0;
+    text-indent: 0;
+}
+
+.botaoFlutuante {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+footer {
+    background-color: var(--vermelhofundo);
+    color: #e0e0e0;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 5vh;
+    border-top: 1px solid #2d2d2d;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .cardapio-linha,
+    .cardapio-linha.invertido {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cardapio-foto {
+        width: 100%;
+        height: 200px;
+    }
+
+    .cardapio-texto {
+        padding: 20px;
+    }
+}
+
+.link-interno {
+    color: inherit;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.link-interno:hover {
+    color: var(--mainred);
+}
+
+.botao-ver-mais {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--amarelodestaque);
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.botao-ver-mais:hover {
+    transform: translateX(5px);
+    text-decoration: underline;
+}
