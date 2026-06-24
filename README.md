@@ -1,2 +1,19 @@
 # my-projects
-Esse repositório foi criado com a intenção de reunir meus projetos pessoais!
+
+Este repositório reúne os principais projetos desenvolvidos durante minha jornada de aprendizado.
+
+## Projetos
+
+- Sistema de Eventos 
+- Site de Buffet
+- 
+- 
+- 
+
+## Tecnologias
+
+- JavaScript
+- HTML 
+- CSS
+- C
+- 
