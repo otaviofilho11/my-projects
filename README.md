@@ -6,7 +6,7 @@ Este repositório reúne os principais projetos desenvolvidos durante minha jorn
 
 - Sistema de Eventos 
 - Site de Buffet
-- 
+- Site de Bazar
 - 
 - 
 
