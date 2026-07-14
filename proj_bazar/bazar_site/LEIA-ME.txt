@@ -1,0 +1,35 @@
+# Bazar da Vila
+
+Projeto desenvolvido utilizando HTML, CSS e JavaScript.
+
+## Funcionalidades
+
+- Página inicial
+- Catálogo de produtos
+- Filtro por categoria
+- Botão para abrir conversa no WhatsApp
+- Layout responsivo
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Como executar
+
+1. Baixe o projeto.
+2. Abra o arquivo `index.html`.
+3. O site será aberto no navegador.
+
+## WhatsApp
+
+Caso queira alterar o número do WhatsApp, basta editar a variável abaixo no arquivo `script.js`:
+
+```javascript
+const numeroWhatsapp = "5519999999999";
+```
+
+## Autor
+
+Projeto desenvolvido por Otávio Sanchez.

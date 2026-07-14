@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bazar com roupas, calçados e peças únicas por preços especiais.">
+  <title>Bazar da Vila | Peças únicas, novos achados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#inicio" class="logo" aria-label="Bazar da Vila">
+        <span class="logo-mark">BV</span>
+        <span>Bazar da Vila</span>
+      </a>
+
+      <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="nav-cta">Falar no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Moda circular • preços acessíveis</span>
+          <h1>Peças com história para criar um estilo só seu.</h1>
+          <p>Roupas, calçados e achados especiais selecionados com carinho. Tudo em ótimo estado e pronto para ganhar uma nova vida.</p>
+          <div class="hero-actions">
+            <a href="#produtos" class="button button-primary">Ver produtos</a>
+            <a href="#contato" class="button button-secondary">Reservar uma peça</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>Peças únicas</strong><span>Estoque limitado</span></div>
+            <div><strong>Preço justo</strong><span>Ótimo custo-benefício</span></div>
+            <div><strong>Atendimento fácil</strong><span>Direto pelo WhatsApp</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card hero-card-main">
+            <img src="assets/produto-03.jpeg" alt="Vestido verde em exposição">
+          </div>
+          <div class="hero-card hero-card-small">
+            <img src="assets/produto-06.jpeg" alt="Botas de couro">
+            <span>Achados especiais</span>
+          </div>
+          <div class="hero-badge">
+            <strong>Novidades</strong>
+            <span>toda semana</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container categories-grid">
+        <article>
+          <span>01</span>
+          <div>
+            <h3>Roupas</h3>
+            <p>Blusas, vestidos, shorts e peças casuais.</p>
+          </div>
+        </article>
+        <article>
+          <span>02</span>
+          <div>
+            <h3>Calçados</h3>
+            <p>Tênis, botas e saltos para vários estilos.</p>
+          </div>
+        </article>
+        <article>
+          <span>03</span>
+          <div>
+            <h3>Artesanais</h3>
+            <p>Peças em crochê cheias de personalidade.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Seleção do bazar</span>
+            <h2>Encontre seu próximo achado</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrar produtos">
+            <button class="filter active" data-filter="todos">Todos</button>
+            <button class="filter" data-filter="roupas">Roupas</button>
+            <button class="filter" data-filter="calcados">Calçados</button>
+            <button class="filter" data-filter="artesanais">Artesanais</button>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card" data-category="roupas">
+            <div class="product-image"><img src="assets/produto-01.jpeg" alt="Camiseta laranja estampada"></div>
+            <div class="product-info"><span class="tag">Roupas</span><h3>Camiseta laranja estampada</h3><p>Visual casual, confortável e cheio de cor.</p><button class="reserve-button" data-product="Camiseta laranja estampada">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="roupas">
+            <div class="product-image"><img src="assets/produto-02.jpeg" alt="Camisa polo preta com bordados"></div>
+            <div class="product-info"><span class="tag">Roupas</span><h3>Polo preta estilo automobilismo</h3><p>Modelo marcante com aplicações bordadas.</p><button class="reserve-button" data-product="Polo preta estilo automobilismo">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="roupas">
+            <div class="product-image"><img src="assets/produto-03.jpeg" alt="Vestido verde de festa"></div>
+            <div class="product-info"><span class="tag">Roupas</span><h3>Vestido verde de festa</h3><p>Elegante, estruturado e com volume na saia.</p><button class="reserve-button" data-product="Vestido verde de festa">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="artesanais">
+            <div class="product-image"><img src="assets/produto-04.jpeg" alt="Conjunto de crochê mostarda"></div>
+            <div class="product-info"><span class="tag">Artesanal</span><h3>Conjunto de crochê mostarda</h3><p>Top e saia feitos à mão, ideais para o verão.</p><button class="reserve-button" data-product="Conjunto de crochê mostarda">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="roupas">
+            <div class="product-image"><img src="assets/produto-05.jpeg" alt="Camiseta verde água e short jeans"></div>
+            <div class="product-info"><span class="tag">Roupas</span><h3>Look casual com short jeans</h3><p>Combinação leve para os dias mais quentes.</p><button class="reserve-button" data-product="Look casual com short jeans">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="calcados">
+            <div class="product-image"><img src="assets/produto-06.jpeg" alt="Bota country marrom"></div>
+            <div class="product-info"><span class="tag">Calçados</span><h3>Bota country marrom</h3><p>Couro em tom caramelo com desenhos laterais.</p><button class="reserve-button" data-product="Bota country marrom">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="calcados">
+            <div class="product-image"><img src="assets/produto-07.jpeg" alt="Tênis casuais em diferentes cores"></div>
+            <div class="product-info"><span class="tag">Calçados</span><h3>Tênis casuais</h3><p>Modelos confortáveis para compor looks urbanos.</p><button class="reserve-button" data-product="Tênis casuais">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="artesanais">
+            <div class="product-image"><img src="assets/produto-08.jpeg" alt="Top colorido de crochê e short branco"></div>
+            <div class="product-info"><span class="tag">Artesanal</span><h3>Top colorido de crochê</h3><p>Peça alegre e exclusiva para um look descontraído.</p><button class="reserve-button" data-product="Top colorido de crochê">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="calcados">
+            <div class="product-image"><img src="assets/produto-09.jpeg" alt="Sandália anabela e ankle boot preta"></div>
+            <div class="product-info"><span class="tag">Calçados</span><h3>Saltos para ocasiões especiais</h3><p>Anabela delicada e ankle boot preta sofisticada.</p><button class="reserve-button" data-product="Saltos para ocasiões especiais">Consultar peça</button></div>
+          </article>
+
+          <article class="product-card" data-category="calcados">
+            <div class="product-image"><img src="assets/produto-10.jpeg" alt="Sapato preto com aplicações brilhantes"></div>
+            <div class="product-info"><span class="tag">Calçados</span><h3>Scarpin preto com brilho</h3><p>Modelo elegante com aplicações de strass.</p><button class="reserve-button" data-product="Scarpin preto com brilho">Consultar peça</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-collage">
+          <img src="assets/produto-08.jpeg" alt="Peças de crochê e roupa branca" class="about-img-one">
+          <img src="assets/produto-07.jpeg" alt="Tênis em exposição" class="about-img-two">
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow">Consumo consciente</span>
+          <h2>Comprar no bazar é bom para você e para o planeta.</h2>
+          <p>Ao escolher uma peça de segunda mão, você economiza, reduz o desperdício e ajuda a prolongar a vida útil de roupas e calçados.</p>
+          <ul>
+            <li><span>✓</span> Peças selecionadas e bem cuidadas</li>
+            <li><span>✓</span> Atendimento próximo e sem complicação</li>
+            <li><span>✓</span> Opções para diferentes estilos e ocasiões</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="container contact-card">
+        <div>
+          <span class="eyebrow light">Gostou de alguma peça?</span>
+          <h2>Chame no WhatsApp e faça sua reserva.</h2>
+          <p>Envie o nome do produto para consultar tamanho, preço e disponibilidade.</p>
+        </div>
+        <a class="button button-light whatsapp-link" href="#" data-message="Olá! Vi o site do bazar e gostaria de saber quais peças estão disponíveis.">Falar com o bazar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <a href="#inicio" class="logo footer-logo"><span class="logo-mark">BV</span><span>Bazar da Vila</span></a>
+        <p>Peças únicas, novos começos.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Bazar da Vila.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
